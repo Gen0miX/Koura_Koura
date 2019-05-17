@@ -23,6 +23,15 @@ public class OverviewCreation extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId() == HOME){
+            Intent home = new Intent(OverviewCreation.this, MainActivity.class);
+            startActivity(home);
+        }
+        return true ;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.overview);

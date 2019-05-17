@@ -23,6 +23,15 @@ public class CreationVapeur extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId() == HOME){
+            Intent home = new Intent(CreationVapeur.this, OverviewCreation.class);
+            startActivity(home);
+        }
+        return true ;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_creation_vapeur);
