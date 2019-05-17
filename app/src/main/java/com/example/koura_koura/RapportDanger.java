@@ -1,5 +1,6 @@
 package com.example.koura_koura;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,6 +18,16 @@ public class RapportDanger extends AppCompatActivity {
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         return true ;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId() == HOME){
+            Intent home = new Intent(RapportDanger.this, MainActivity.class);
+            startActivity(home);
+        }
+        return true ;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

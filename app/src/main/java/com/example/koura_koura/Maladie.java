@@ -13,6 +13,8 @@ public class Maladie extends AppCompatActivity {
 
     private static final int HOME = 0 ;
 
+    private static int score ;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
 
@@ -23,9 +25,20 @@ public class Maladie extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId() == HOME){
+            Intent home = new Intent(Maladie.this, MainActivity.class);
+            startActivity(home);
+        }
+        return true ;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maladie);
+
+        score = getIntent().getIntExtra("score", 10);
 
         ImageButton cross = findViewById(R.id.crossButton);
         ImageButton ok = findViewById(R.id.correctButton);
@@ -34,6 +47,8 @@ public class Maladie extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent shell = new Intent(Maladie.this, Coquille.class);
+                score = 0 ;
+                shell.putExtra("score", score);
                 startActivity(shell);
             }
         });
@@ -41,8 +56,10 @@ public class Maladie extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent quality = new Intent(Maladie.this, Coquille.class);
-                startActivity(quality);
+                Intent shell = new Intent(Maladie.this, Coquille.class);
+                score++;
+                shell.putExtra("score", score);
+                startActivity(shell);
             }
         });
 

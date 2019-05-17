@@ -10,6 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int score = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent quality = new Intent(MainActivity.this, Maladie.class);
+                quality.putExtra("score", score);
                 startActivity(quality);
             }
         });
