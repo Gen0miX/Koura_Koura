@@ -29,10 +29,18 @@ public class OverviewCreation extends AppCompatActivity {
 
         ImageButton imageButton = findViewById(R.id.imageButton);
         ImageButton imageButton2 = findViewById(R.id.imageButton2);
-        ImageButton imageButton3 = findViewById(R.id.imageButton3);
-        ImageButton imageButton4 = findViewById(R.id.imageButton4);
-        ImageButton imageButton5 = findViewById(R.id.imageButton5);
-        ImageButton imageButton6 = findViewById(R.id.imageButton6);
+        ImageButton imageButton3 = findViewById(R.id.imageButton4);
+        ImageButton imageButton4 = findViewById(R.id.imageButton5);
+        ImageButton imageButton5 = findViewById(R.id.imageButton6);
+        ImageButton imageButton6 = findViewById(R.id.imageButton8);
+
+        imageButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent transformation = new Intent(OverviewCreation.this, CreationTriage.class);
+                startActivity(transformation);
+            }
+        });
 
         imageButton3.setOnClickListener(new View.OnClickListener(){
             @Override
