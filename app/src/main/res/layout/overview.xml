@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/overview1"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="113dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sortieren" />
+
+    <ImageView
+        android:id="@+id/overview2"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="81dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overview1"
+        app:srcCompat="@drawable/mischen" />
+
+    <ImageView
+        android:id="@+id/overview3"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="81dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overview2"
+        app:srcCompat="@drawable/dampfen" />
+
+    <ImageView
+        android:id="@+id/overview4"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toEndOf="@+id/overview3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rosten" />
+
+    <ImageView
+        android:id="@+id/overview5"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="81dp"
+        app:layout_constraintStart_toEndOf="@+id/overview2"
+        app:layout_constraintTop_toBottomOf="@+id/overview4"
+        app:srcCompat="@drawable/gewurz" />
+
+    <ImageView
+        android:id="@+id/overview6"
+        android:layout_width="126dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overview5"
+        app:srcCompat="@drawable/fritieren" />
+
+</android.support.constraint.ConstraintLayout>
