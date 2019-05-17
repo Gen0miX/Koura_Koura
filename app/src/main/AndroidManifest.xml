@@ -12,6 +12,9 @@
         <activity android:name=".RapportDanger"></activity>
         <activity android:name=".RapportOk" />
         <activity android:name=".Coquille" />
+        <activity android:name=".CreationMalaxage" />
+        <activity android:name=".CreationVapeur" />
+        <activity android:name=".OverviewCreation" />
         <activity android:name=".Maladie" />
         <activity android:name=".MainActivity">
             <intent-filter>

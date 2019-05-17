@@ -20,10 +20,10 @@
         android:id="@+id/qualityButton"
         android:layout_width="165dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="60dp"
-        android:text="Qualité"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="92dp"
         android:background="@color/colorPrimary"
+        android:text="Qualité"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,13 +31,12 @@
         android:id="@+id/transformationButton"
         android:layout_width="163dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="115dp"
-        android:text="Transformation"
         android:background="@color/colorPrimary"
-        android:onClick="goToCreation"
+        android:text="Transformation"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/quality" />
+        app:layout_constraintTop_toBottomOf="@+id/qualityButton" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -60,5 +59,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/foie_malade2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="graphics created with LogoMakr.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
