@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         transformationButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent transformation = new Intent(MainActivity.this, Transformation.class);
-                startActivity(transformation);
+             //   Intent transformation = new Intent(MainActivity.this, Transformation.class);
+             //   startActivity(transformation);
             }
         });
 
