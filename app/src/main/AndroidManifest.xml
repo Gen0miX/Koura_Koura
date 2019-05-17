@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RapportDanger"></activity>
+        <activity android:name=".RapportOk" />
+        <activity android:name=".Coquille" />
+        <activity android:name=".Maladie" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
