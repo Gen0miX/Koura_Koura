@@ -24,6 +24,7 @@ public class RapportOk extends AppCompatActivity {
         if(item.getItemId() == HOME){
             Intent home = new Intent(RapportOk.this, MainActivity.class);
             startActivity(home);
+
         }
         return true ;
     }

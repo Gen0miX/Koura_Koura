@@ -47,7 +47,7 @@ public class Maladie extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent shell = new Intent(Maladie.this, Coquille.class);
-                score -- ;
+                score = 0 ;
                 shell.putExtra("score", score);
                 startActivity(shell);
             }
